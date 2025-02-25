@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+
+
+body {
+  font-family: 'Inter', sans-serif;
+} 
+
+@layer base {
+  html {
+    color: #0A0A0A;
+  }
+}
+
+/* Add this to your existing CSS file */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+
