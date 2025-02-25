@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import aboutVideo from '../static/about-video-720p.mp4';
+import image1 from '../static/image1.jpeg';
+import SuspenseVideo from './SuspenseVideo.jsx';
+
+const VideoFallback = () => (
+  <img 
+    src={image1} 
+    alt="Video loading" 
+    className="w-full h-auto" 
+  />
+);
 
 const AboutVideo = () => {
   return (
-    <div className="relative w-full pt-[56.25%] rounded-2xl overflow-hidden">
-      <iframe 
-        className="absolute top-0 left-0 w-full h-full"
-        src="https://www.youtube.com/embed/efNu5aoTBjk" 
-        title="Welcome to Travel Video"
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowFullScreen>
-      </iframe>
+    <div className="rounded-2xl overflow-hidden">
+      <Suspense fallback={<VideoFallback />}>
+        <SuspenseVideo 
+          className="w-full h-auto"
+          src={aboutVideo}
+          controls
+          playsInline
+        />
+      </Suspense>
     </div>
   );
 };

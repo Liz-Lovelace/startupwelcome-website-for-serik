@@ -3,7 +3,7 @@ import React from 'react';
 export default function BecomePartnerLink() {
   return (
     <a 
-      href="#" 
+      href="https://wa.me/+77017226234" 
       className="flex gap-2 font-semibold items-center justify-center bg-brand text-white py-3 px-6 rounded-full w-full text-center"
     >
       Become&nbsp;a&nbsp;partner
