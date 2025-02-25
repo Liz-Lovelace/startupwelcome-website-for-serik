@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CircleCarousel({ items }) {
   return (
-    <div className="flex justify-between gap-6 overflow-x-auto scrollbar-hide px-4">
+    <div className="flex justify-center gap-6 overflow-x-auto scrollbar-hide px-4">
       {items.map((item, index) => (
         <div key={index} className="flex flex-col items-center flex-shrink-0">
           <a href={item.link} className="block">

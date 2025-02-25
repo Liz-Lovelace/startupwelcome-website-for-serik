@@ -9,6 +9,7 @@ export default {
         brand: '#FD6A05',
         black: '#0A0A0A',
         gray1: '#F3F3F3',
+        gray2: '#646464',
       },
     },
   },
