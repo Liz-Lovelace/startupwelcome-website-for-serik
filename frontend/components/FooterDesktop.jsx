@@ -14,9 +14,6 @@ const FooterMobile = () => {
           <a href="mailto:info@welcomestream.com" className="text-black font-bold underline block mb-4">
             info@welcomestream.com
           </a>
-          <a href="tel:+77017226234" className="mb-8 text-black font-bold underline block">
-            +7 701 722 6234
-          </a>
         </div>
         
         <div className="text-gray2 text-sm">
