@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import landingVideo from '../static/landing-video.mp4';
+import landingVideo from '../static/landing-video-360p.mp4';
 import landingImage from '../static/image1.jpeg';
 import SuspenseVideo from './SuspenseVideo.jsx';
 
