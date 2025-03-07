@@ -1,25 +1,11 @@
 import React from 'react';
-import WelcomeLogo from './WelcomeLogo.jsx';
+import FooterBody from './FooterBody.jsx';
 
 const FooterMobile = () => {
-
   return (
     <footer className="max-w-[580px] mx-auto mt-6">
       <div className="bg-gray1 rounded-tl-2xl rounded-tr-2xl p-6">
-        <div className="mt-6 mb-4">
-          <WelcomeLogo />
-        </div>
-        
-        <div className="mb-4">
-          <a href="mailto:info@welcomestream.com" className="text-black font-bold underline block mb-4">
-            info@welcomestream.com
-          </a>
-        </div>
-        
-        <div className="text-gray2 text-sm">
-          <p>© 2025 Welcome. All rights reserved.</p>
-          <a href="#" className="block">Terms and conditions</a>
-        </div>
+        <FooterBody />
       </div>
     </footer>
   );

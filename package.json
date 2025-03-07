@@ -6,6 +6,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@rollup/plugin-dsv": "^3.0.5",
     "@tailwindcss/vite": "^4.0.8",
     "@vitejs/plugin-react": "^4.3.4",
     "react": "^19.0.0",

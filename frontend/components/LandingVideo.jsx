@@ -1,39 +1,13 @@
-import React from 'react';
-import landingVideo from '../static/landing-video-360p.mp4';
-import landingImage from '../static/image1.jpeg';
-import SuspenseVideo from './SuspenseVideo.jsx';
-
-/*
-const VideoFallback = () => (
-  <img 
-    src={landingImage} 
-    alt="Video loading" 
-    className="w-full h-auto" 
-  />
-);
+import React, { useState } from 'react';
 
 const LandingVideo = () => {
-  return (
-    <div className="rounded-2xl overflow-hidden">
-      <Suspense fallback={<VideoFallback />}>
-        <SuspenseVideo 
-          className="w-full h-auto"
-          src={landingVideo}
-          muted
-          autoPlay
-          playsInline
-          loop
-          preload="auto"
-        />
-      </Suspense>
-    </div>
-  );
-};
-*/
+  const [isLoading, setIsLoading] = useState(true);
 
-const LandingVideo = () => {
   return (
-    <div className="rounded-2xl overflow-hidden">
+    <div className="rounded-2xl overflow-hidden border-1 border-gray1">
+      {isLoading && (
+        <div className="w-full aspect-video bg-gray-100"></div>
+      )}
       <iframe
         src="https://player.vimeo.com/video/1061156830?h=9b27d21fe1&autoplay=1&loop=1&background=1"
         width="100%"
@@ -41,10 +15,11 @@ const LandingVideo = () => {
         frameBorder="0"
         allow="autoplay"
         title="Landing Video"
-        className="w-full aspect-video"
+        className={`w-full aspect-video ${isLoading ? 'hidden' : ''}`}
+        onLoad={() => setIsLoading(false)}
       ></iframe>
     </div>
-  )
+  );
 };
 
 export default LandingVideo; 
