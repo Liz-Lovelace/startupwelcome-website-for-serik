@@ -117,7 +117,7 @@ const PartnersPage = ({ isDesktop }) => {
                     ministry={partner.ministry}
                     partnerWebsite={partner.partnerWebsite}
                     ministryWebsite={partner.ministryWebsite}
-                    context={isDesktop ? "grid" : "carousel-mobile"}
+                    context={isDesktop ? "grid" : "carousel-grid-mobile"}
                   />
                 ))}
               </div>

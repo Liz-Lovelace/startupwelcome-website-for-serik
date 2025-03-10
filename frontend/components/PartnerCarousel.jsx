@@ -25,7 +25,7 @@ const PartnerCarousel = ({ partners, fullListLink }) => {
   return (
     <div className="w-full">
       <div className="w-full overflow-x-auto scrollbar-hide pt-4" ref={scrollContainerRef}>
-        <div className="flex gap-4 px-4 pb-2">
+        <div className="flex gap-[10px] px-4 pb-2">
           {partners.map((partner, index) => (
             <div key={index} className="flex-shrink-0">
               <PartnerCard
