@@ -33,6 +33,11 @@ const AboutBody = () => {
         Promoting your country has never been easier! Reach out to us and let's do this together! 
       </p>
 
+      <p className="font-normal mt-6 mb-6">
+        Welcome CEO Serik Akishev talks about our global tourism media development plans:
+      </p>
+
+
       <AboutVideo videoUrl="https://youtu.be/qQL0Jb-ENlk?si=H1_Dkd9ksz_tS4zV" />
     </>
   );
