@@ -10,7 +10,7 @@ const LandingVideo = () => {
         <div className="w-full aspect-video bg-gray-100"></div>
       )}
       <iframe
-        src="https://player.twitch.tv/?channel=welcomestreamtv&parent=localhost&parent=https://welcomestream.com/&autoplay=true&muted=true&hide_ui=1"
+        src="https://player.twitch.tv/?channel=welcomestreamtv&parent=localhost&parent=welcomestream.com&autoplay=true&muted=true&hide_ui=1"
         width="100%"
         height="100%"
         frameBorder="0"
