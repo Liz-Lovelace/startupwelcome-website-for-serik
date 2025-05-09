@@ -21,7 +21,7 @@ import pinterest from '../static/logos/Socials/Pinterest.png';
 import likee from '../static/logos/Socials/likee.png';
 
 export const streamingPlatforms = [
-  { name: 'Megogo', image: megogo, link: 'https://megogo.net/en' },
+  { name: 'Megogo', image: megogo, link: 'https://megogo.net/ru/tv/channels/26129006-welcome-online.html' },
   { name: 'FMedia', image: fmedia, link: 'https://fmedia.kz/' },
   { name: 'Plex', image: plex, link: 'https://www.plex.tv/' },
   { name: 'Kartina', image: kartina, link: 'https://www.kartina.tv/en' },
