@@ -43,7 +43,7 @@ const LandingPageMobile = () => {
           <h2 className="text-2xl font-semibold mb-4">We stream at:</h2>
         </div>
         <CircleCarousel items={streamingPlatforms} fullListLink="/streaming-platforms" />
-        <div className="mt-8 max-w-[390px] mx-auto">
+        <div className="mt-8 max-w-[390px] mx-auto px-4">
           <Stream />
         </div>
       </div>
