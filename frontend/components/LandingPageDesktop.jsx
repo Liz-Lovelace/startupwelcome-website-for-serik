@@ -3,6 +3,7 @@ import NavBarDesktop from './NavBarDesktop.jsx';
 import BecomePartnerLink from './BecomePartnerLink.jsx';
 import WatchPresentationLink from './WatchPresentationLink.jsx';
 import LandingVideo from './LandingVideo.jsx';
+import Stream from './Stream.jsx';
 import CircleCarousel from './CircleCarousel.jsx';
 import PartnerCarousel from './PartnerCarousel.jsx';
 import ExplainerBoxes from './ExplainerBoxes.jsx';
@@ -47,9 +48,13 @@ const LandingPageDesktop = () => {
         </div>
       </div>
         
-      <div className="mb-48 mt-48 text-center">
+      <div className="mb-8 mt-48 text-center">
         <h2 className="text-3xl font-semibold mb-4">We stream at:</h2>
         <CircleCarousel items={streamingPlatforms}/>
+      </div>
+          
+      <div className="mb-48 max-w-4xl mx-auto px-8 rounded-2xl overflow-hidden">
+        <Stream />
       </div>
 
       <div className="mb-48 text-center">

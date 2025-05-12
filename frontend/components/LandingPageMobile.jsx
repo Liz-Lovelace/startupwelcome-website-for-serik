@@ -5,6 +5,7 @@ import WatchPresentationLink from './WatchPresentationLink.jsx';
 import CircleCarousel from './CircleCarousel.jsx';
 import FooterMobile from './FooterMobile.jsx';
 import LandingVideo from './LandingVideo.jsx';
+import Stream from './Stream.jsx';
 import PartnerCarousel from './PartnerCarousel.jsx';
 import ExplainerBoxes from './ExplainerBoxes.jsx';
 import { streamingPlatforms, socialMedia } from './carouselContents.js';
@@ -42,6 +43,9 @@ const LandingPageMobile = () => {
           <h2 className="text-2xl font-semibold mb-4">We stream at:</h2>
         </div>
         <CircleCarousel items={streamingPlatforms} fullListLink="/streaming-platforms" />
+        <div className="mt-8 max-w-[390px] mx-auto">
+          <Stream />
+        </div>
       </div>
 
       <div className="mt-16">
